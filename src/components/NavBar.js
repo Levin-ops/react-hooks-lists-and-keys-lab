@@ -5,8 +5,8 @@ function NavBar() {
 
   return (
   <nav>{
-    links.map((link) => (
-      <a key="link" href={`/${link}`}>{link}</a>
+    links.map((link, index) => (
+      <a key={index} href={`/${link}`}>{link}</a>
     ))
   }
   </nav>
